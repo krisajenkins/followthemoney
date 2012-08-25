@@ -2,6 +2,7 @@ from django.core.management.base		import BaseCommand
 import json
 import pprint
 import urllib
+import datetime
 
 from youtube.models						import Video
 
@@ -25,12 +26,19 @@ class Command( BaseCommand ):
 		print search_term
 
 		for entry in entries:
-			author_name = entry['author'][0]['name']['$t']
-			description = entry['content']['$t']
-			duration = entry['media$group']['yt$duration']['seconds']
-			link = entry['link'][0]['href']
+			video = Video()
+			
+			video.youtube_id  = entry['id']['$t']
+			video.search_term = search_term
+			video.author_name = entry['author'][0]['name']['$t']
+			video.description = entry['content']['$t']
+			video.duration    = entry['media$group']['yt$duration']['seconds']
+			video.link        = entry['link'][0]['href']
+			video.published   = datetime.datetime.strptime(entry['published']['$t'], "%Y-%m-%dT%H:%M:%S.000Z")
+			video.title       = entry['title']['$t']
+			video.views       = entry['yt$statistics']['viewCount']
+			video.favourites  = entry['yt$statistics']['favoriteCount']
 
-			video = Video( author_name = author_name, description = description, duration = duration, search_term = search_term, link = link )
 			video.save()
 
-		print "Saved"
+		print "Saved %d" % len( entries )
