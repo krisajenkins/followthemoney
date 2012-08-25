@@ -11,23 +11,20 @@ class Command( BaseCommand ):
 	help = "TODO"
 
 	def handle( self, *args, **options ):
-		author = args[0]
-		search_term  = args[1]
+		author      = args[0]
+		search_term = args[1]
 
-		params = urllib.urlencode({'author': author, 'alt': 'json', 'q': search_term, 'max-results': 50})
-		f = urllib.urlopen( 'http://gdata.youtube.com/feeds/api/videos?%s' % params )
-		obj = json.loads( f.read() )
+		params   = urllib.urlencode({'author': author, 'alt': 'json', 'q': search_term, 'max-results': 50})
+		feed     = urllib.urlopen( 'http://gdata.youtube.com/feeds/api/videos?%s' % params )
+		response = json.loads( feed.read() )
 
-		pp = pprint.PrettyPrinter()
+		# pp = pprint.PrettyPrinter()
 		# pp.pprint( entries[0] )
-		entries = obj['feed']['entry']
-
-		print author
-		print search_term
+		entries = response['feed']['entry']
 
 		for entry in entries:
 			video = Video()
-			
+
 			video.youtube_id  = entry['id']['$t']
 			video.search_term = search_term
 			video.author_name = entry['author'][0]['name']['$t']
@@ -41,4 +38,4 @@ class Command( BaseCommand ):
 
 			video.save()
 
-		print "Saved %d" % len( entries )
+		print "%s: %s: Saved %d" % ( author, search_term,  len( entries ) )
