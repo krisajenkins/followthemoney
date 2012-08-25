@@ -1,0 +1,10 @@
+Session.vim
+tmp
+*.pyc
+/*.db
+.DS_Store
+*.*.swp
+
+/local_settings.py
+/tags
+/media
