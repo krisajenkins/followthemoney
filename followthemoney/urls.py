@@ -12,6 +12,6 @@ urlpatterns = patterns('',
 	url( r'^admin/doc/',							include( 'django.contrib.admindocs.urls' ) ),
 	url( r'^admin/',								include( admin.site.urls ) ),
 
-	url( r'^data/',									MainReportView.as_view(), name = 'main_report' ),
+	url( r'^stats.csv',								MainReportView.as_view(), name = 'main_report' ),
 	url( r'^$',										direct_to_template, {'template': 'index.html' } ),
 )
