@@ -12,7 +12,7 @@ DATABASES = {
 	}
 }
 
-MEDIA_ROOT	= '/Users/kris/Work/OpenSource/followthemoney/media'
+MEDIA_ROOT	= ''
 STATIC_ROOT	= ''
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

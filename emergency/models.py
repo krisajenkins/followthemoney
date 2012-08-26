@@ -2,9 +2,13 @@ from django.db import models
 from django.db.models						import Model, Manager, BigIntegerField, ForeignKey, CharField, TextField, ImageField, SlugField, URLField, DateTimeField, Count, permalink, IntegerField
 
 class Emergency( Model ):
-	name                = TextField()
-	population_affected = BigIntegerField( null = True )
-	funds_committed     = BigIntegerField( null = True )
+	name             = TextField()
+	people_affected  = BigIntegerField( null = True, blank = True )
+	people_died      = BigIntegerField( null = True, blank = True )
+	people_injured   = BigIntegerField( null = True, blank = True )
+	people_missing   = BigIntegerField( null = True, blank = True )
+	people_displaced = BigIntegerField( null = True, blank = True )
+	funds_committed  = BigIntegerField( null = True, blank = True )
 
 	class Meta:
 		ordering = [ 'name' ]
