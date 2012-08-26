@@ -1,23 +1,154 @@
 [
     {
+        "pk": 4, 
+        "model": "emergency.emergency", 
+        "fields": {
+            "people_died": 226408, 
+            "funds_committed": 6249883899, 
+            "people_displaced": 1690000, 
+            "people_missing": 45752, 
+            "people_injured": 125000, 
+            "people_affected": 2300000, 
+            "name": "2004 Indian Ocean Tsunami"
+        }
+    }, 
+    {
         "pk": 2, 
         "model": "emergency.emergency", 
         "fields": {
-            "name": "Haiti Earthquake"
+            "people_died": 222570, 
+            "funds_committed": 4167057145, 
+            "people_displaced": 550000, 
+            "people_missing": null, 
+            "people_injured": 300000, 
+            "people_affected": 3400000, 
+            "name": "2010 Haiti Earthquake"
         }
     }, 
     {
         "pk": 1, 
         "model": "emergency.emergency", 
         "fields": {
-            "name": "Pakistan Flood"
+            "people_died": 1781000, 
+            "funds_committed": 2918451998, 
+            "people_displaced": 660000, 
+            "people_missing": null, 
+            "people_injured": 2966000, 
+            "people_affected": 20000000, 
+            "name": "2010 Pakistan Floods"
         }
     }, 
     {
-        "pk": 1, 
+        "pk": 3, 
+        "model": "emergency.emergency", 
+        "fields": {
+            "people_died": 318, 
+            "funds_committed": 328906436, 
+            "people_displaced": 760245, 
+            "people_missing": null, 
+            "people_injured": null, 
+            "people_affected": 13300000, 
+            "name": "2011 East Africa Drought"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "emergency.emergency", 
+        "fields": {
+            "people_died": 19846, 
+            "funds_committed": 722936734, 
+            "people_displaced": 200000, 
+            "people_missing": 2909, 
+            "people_injured": 6109, 
+            "people_affected": 368820, 
+            "name": "2011 Japanese Earthquake & Tsunami"
+        }
+    }, 
+    {
+        "pk": 14, 
         "model": "emergency.emergencysearchterm", 
         "fields": {
-            "search_term": "pakistan flood", 
+            "search_term": "Japan tsunami relief", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japanese Tsunami and Earthquake", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japan tsunami news", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japanese earthquake fukoshima", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods media coverage", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japan tsunami media coverage", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods video", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods top stories", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Horn of Africa Drought 2011", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "horn of africa crisis", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods news", 
             "emergency": 1
         }
     }, 
@@ -27,6 +158,598 @@
         "fields": {
             "search_term": "haiti earthquake", 
             "emergency": 2
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan post-floods", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan inond\u00e9 inondation", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Ha\u00efti tremblement de terre", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami 2004", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "s\u00e9cheresse afrique est", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "boxing day tsunami 2004", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "afrique est famine faim", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "s\u00e9cheresse somalie", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami 2004", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "tsunami indonesie", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "oc\u00e9an indien tsunami", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "vague tremblement de terre indonesie", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "japon tremblement de terre tsunami", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "japon fukushima tremblement de terre", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami donations", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami donations", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami media coverage ", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods affected area", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami media coverage ", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami news", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami news", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "haiti earthquake news", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami top stories", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods 2010", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "haiti earthquake news", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "s\u00e9cheresse famine Soudan Somalie Djibouti Kenya Ouganda Ethiopie", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Ha\u00efti d\u00e9sastre ", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0627\u0644\u062c\u0641\u0627\u0641 \u0634\u0631\u0642 \u0623\u0641\u0631\u064a\u0642\u064a\u0627", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami top stories ", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "japan tsunami donations", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0632\u0644\u0632\u0627\u0644 \u0647\u0627\u064a\u062a\u064a", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0627\u0646\u062f\u0648\u0646\u064a\u0633\u064a\u0627 \u0632\u0644\u0632\u0627\u0644 \u062a\u0633\u0648\u0646\u0627\u0645\u064a", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0627\u0644\u064a\u0627\u0628\u0627\u0646 \u0632\u0644\u0632\u0627\u0644 \u062a\u0633\u0648\u0646\u0627\u0645\u064a", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0628\u0627\u0643\u0633\u062a\u0627\u0646 \u0627\u0644\u0641\u064a\u0636\u0627\u0646\u0627\u062a", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0632\u0644\u0632\u0627\u0644 \u0627\u0644\u0645\u062d\u064a\u0637 \u0627\u0644\u0647\u0646\u062f\u064a", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami efforts", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami efforts", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "2010 Haiti Earthquake", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Pakistan floods relief", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Haiti post-earthquake", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Haiti Earthquake Relief", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "east africa drought news aljazeera", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Horn of Africa Drought Al Jazeera", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "east africa drought top stories", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japanese tsunami", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "east africa drought media coverage", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japanese earthquake", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japanese tsunami 2011", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "indian ocean tsunami relief", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "haiti earthquake epicentre", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japan post-tsunami", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "asian tsunami relief", 
+            "emergency": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "Japan post-earthquake", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan floods efforts", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "japan tsunami efforts", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "top stories on haiti earthquake", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "east africa drought 2011", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "media coverage haiti earthquake", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "top stories Japan tsuami", 
+            "emergency": 5
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "haiti efforts", 
+            "emergency": 2
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought refugee", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought news", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought top stories", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought relief effort", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought top stories", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought humanitarian crisis", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought response", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought recovery", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "somalia drought 2011", 
+            "emergency": 3
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "\u0627\u0644\u062c\u0641\u0627\u0641 \u0625\u062b\u064a\u0648\u0628\u064a\u0627 \u0643\u064a\u0646\u064a\u0627 \u0627\u0644\u0635\u0648\u0645\u0627\u0644 \u0627\u0644\u0633\u0648\u062f\u0627\u0646", 
+            "emergency": 3
         }
     }
 ]
