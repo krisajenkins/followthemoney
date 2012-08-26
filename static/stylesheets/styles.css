@@ -455,6 +455,7 @@ hr {
   height: 1px;
   border-top: 1px dashed #b3b3b3;
   margin: 42px 0;
+  display: block;
 }
 
 /* line 107, ../sass/styles.scss */
@@ -566,7 +567,6 @@ a:visted {
 .ddc-blurb {
   margin-top: 44px;
   padding-top: 44px;
-  border-top: 1px dashed #b3b3b3;
 }
 
 /* line 390, ../sass/styles.scss */
