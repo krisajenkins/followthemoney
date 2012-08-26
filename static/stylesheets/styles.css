@@ -644,7 +644,7 @@ a:visted {
 /* line 313, ../sass/styles.scss */
 .key div:nth-child(2n) {
   float: right;
-  background-image: url("../images/stripe.png");
+  background-image: url("../followthemoney/static/images/stripe.png");
 }
 
 /* line 319, ../sass/styles.scss */
