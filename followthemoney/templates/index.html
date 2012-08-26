@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>DDC- project</title>
+    <title>Flow the money</title>
 
     <!-- get Droid sans & serif from google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
+    <!-- get riskshaw stylesheet in stylesheets folder -->
+    <link rel="stylesheet" href="stylesheets/rickshaw.css">
+    
     <!-- get page stylesheet in stylesheets folder --> 
-    <link rel="stylesheet" href="static/stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,17 +23,17 @@
   <header class="header">
   
   <!-- project title -->
-    <h1 class="title">Project title</h1>
+    <h1 class="title">Follow the money</h1>
 
   </header>
 
   <div class="wrap"> <!-- Start wrap -->
 
     <!-- challenge description -->
-    <h2 class="challenge">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</h2>
+    <h2 class="challenge">Examining the influence of the media on the level of aid following humanitarian crises.</h2>
 
     <!-- challenge introduction -->
-    <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+    <p class="intro">At the Development Data Challenge in London, a group of developers, journalists, social entrepreneurs and international development experts set themselves the challenge of tracking the influence of media coverage on the amount of funding following natural disasters. We selected six major natural disasters from the last ten years; the Indian Ocean Tsunami (2004), Hurricane Katrina (2005), the Haiti Earthquake (2010), the Pakistan Floods (2010) the Japan Earthquake and Tsunami (2011) and the East Africa Drought (2011).</p>
 
     <hr>
 
@@ -38,25 +41,107 @@
     <section class="visualization-section">
 
       <!-- visualization title -->
-      <h3 class="visualization-title">visualization title</h3>
+      <h3 class="visualization-title">Relative media and aid funding per crisis.</h3>
 
       <!-- container for visualization -->
       <div class="visualization-container">
 
         <!-- visualization  element (link to JS)-->
-        <div id="visualization"></div>
+        <div id="graph">
 
-        <!-- visualization caption -->
-        <span class="visualization-caption">visualization caption</span>
+          <div class="crisis-1">
+            <div class="media"></div>
+            <div class="funds"></div>
+          </div>
+          <div class="crisis-2">
+            <div class="media"></div>
+            <div class="funds"></div>
+          </div>
+          <div class="crisis-3">
+            <div class="media"></div>
+            <div class="funds"></div>
+          </div>
+          <div class="crisis-4">
+            <div class="media"></div>
+            <div class="funds"></div>
+          </div>
+          <div class="crisis-5">
+            <div class="media"></div>
+            <div class="funds"></div>
+          </div>
+          <div class="crisis-6">
+            <div class="media"></div>
+            <div class="funds"></div>
+          </div>
+
+        </div>
+
+        <div class="graph-titles"> 
+          <div class="graph-title">Haiti Earthquake</div>
+          <div class="graph-title">Pakistan Floods</div>
+          <div class="graph-title">Japanese Earthquake and Tsunami</div>
+          <div class="graph-title">East Africa Drought</div>
+          <div class="graph-title">Hurricane Katrina</div>
+          <div class="graph-title">Indian Ocean Tsunami</div>
+        </div>
+
+        <div class="key">
+          <div class="key-media">Media impact</div>
+          <div class="key-funds">Aid funds</div>
+        </div>
+
+        <ul class="crisis-container">
+
+          <li class="crisis-1">
+            <h4 class="crisis-title">Haiti Earthquake</h4>
+            <span class="crisis-date">January 2010</span>
+            <span class="crisis-affected">Many</span>
+            <span  class="crisis-description">The earthquake that hit Haiti at 16:53 local time on 12 January 2010 was relatively smaller than others measuring 7.0 in magnitude. However, heavily urbanised areas close to the epicentre as well as existing poverty, governance and health problems meant that the impact was larger in Haiti than similar sized earthquakes elsewhere.</span>
+          </li>
+
+          <li class="crisis-2">
+            <h4 class="crisis-title">Pakistan Floods</h4>
+            <span class="crisis-date">July 2010</span>
+            <span class="crisis-affected">A gazillion</span>
+            <span  class="crisis-description">After heavy monsoon rains, in July 2010 Pakistan was hit by its worst floods for over 80 years causing serious damage to the country’s power infrastructure and leaving victims inaccessible from relief efforts. The submerged land included some of Pakistan’s most fertile areas meaning that agricultural crops and local jobs saw huge losses. </span>
+          </li>
+
+          <li class="crisis-3">
+            <h4 class="crisis-title">Japanese Earthquake and Tsunami</h4>
+            <span class="crisis-date">March 2011</span>
+            <span class="crisis-affected">Many</span>
+            <span  class="crisis-description">At 14:46 local time on 11 March 2011 the world’s fifth strongest recorded earthquake shook Japan and was followed by over 100 aftershocks. The earthquake created a tsunami in the  Fukushima region in the north-east of the country. Fukushima’s huge nuclear power plant was severely damaged by the earthquake resulting in a series of explosions which posed a serious health risk to the region’s residents.</span>
+          </li>
+
+          <li class="crisis-4">
+            <h4 class="crisis-title">East Africa Drought</h4>
+            <span class="crisis-date">July 2011</span>
+            <span class="crisis-affected">A gazillion</span>
+            <span  class="crisis-description">Severe drought in the Horn of Africa which began in July 2011 has resulted in food crises and ensuing health and migratory emergencies in several East African countries. Djibouti, Ethiopia, Kenya and Somalia have been deeply affected as well as Sudan, South Sudan and Uganda. UN defined famine (when there is a complete lack of food access and mass starvation, death and displacement) was declared in south Somalia in 2011.</span>
+          </li>
+
+          <li class="crisis-5">
+            <h4 class="crisis-title">Hurricane Katrina</h4>
+            <span class="crisis-date">August 2005</span>
+            <span class="crisis-affected">A gazillion</span>
+            <span  class="crisis-description">On 29 August 2005, at 07:10 Hurricane Katrina hit the Florida coast after gathering strength for days near the Gulf of Mexico. Storm winds continued to grow in size and travelled through Louisiana, Mississippi and Alabama leaving property damage, oil spills and flooding in their wake.</span>
+          </li>
+
+          <li class="crisis-6">
+            <h4 class="crisis-title">Indian Ocean Tsunami</h4>
+            <span class="crisis-date">December 2004</span>
+            <span class="crisis-affected">A gazillion</span>
+            <span  class="crisis-description">At 07:59 local time on 26 December 2004, an 8.9 magnitude earthquake occured under the Indian Ocean. The world’s largest for at least 40 years, the earthquake triggered an enormous Tsunami reaching heights of 10m. The tsunami spread across the entire Indian Ocean, hitting several south Asian countries as well as the coastlines of Somalia, Kenya and Tanzania. Indonesia, where the quake’s epicentre was located, was the country worst-hit by this disaster. </span>
+          </li>
+
+        </ul>
 
       </div> <!-- end visualization-container -->
 
-      <!-- visualization description -->
-      <p class="visualization-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+    <!-- visualization description -->
+    <p class="visualization-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
 
     </section> <!-- end visualization-section -->
-
-    <hr>
 
     <article class="ddc-blurb">
 
@@ -84,36 +169,36 @@
         <!-- copy & repeat for each team member -->
         <li class="author"> 
           <!-- author name -->
-          <h4>Author name</h4>
+          <h4>Katherine Purvis</h4>
 
           <!-- authors organization -->
-          <span>Organization name</span>
+          <span>SRDF</span>
 
           <!-- authors website link -->
-          <a href="">Website link</a>
+          <!-- <a href="">Website link</a> -->
 
           <!-- authors twitter link -->
-          <a href="">Twitter link</a>
+          <a href="http://twitter.com/katherinepurvis">@katherinepurvis</a>
 
           <!-- authors github link -->
-          <a href="">Github link</a>
+          <!-- <a href="">Github link</a> -->
         </li> <!-- end author each -->
 
         <li class="author"> 
           <!-- author name -->
-          <h4>Author name</h4>
+          <h4>Mona Chalabi</h4>
 
           <!-- authors organization -->
-          <span>Organization name</span>
+          <span>INCAS Consulting</span>
 
           <!-- authors website link -->
-          <a href="">Website link</a>
+          <!-- <a href="">Website link</a> -->
 
           <!-- authors twitter link -->
-          <a href="">Twitter link</a>
+          <a href="http://twitter.com/MonaChalabi">@MonaChalabi</a>
 
           <!-- authors github link -->
-          <a href="">Github link</a>
+          <!-- <a href="">Github link</a> -->
         </li> <!-- end author each -->
 
         <li class="author"> 
