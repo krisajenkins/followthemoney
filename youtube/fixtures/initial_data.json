@@ -1,0 +1,52 @@
+[
+    {
+        "pk": "afp", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "associatedpress", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "bloomberg", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "cbsnewsonline", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "cnn", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "itnnews", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "reutersvideo", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "russiatoday", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "skynews", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }, 
+    {
+        "pk": "thenewyorktimes", 
+        "model": "youtube.channel", 
+        "fields": {}
+    }
+]

@@ -4,38 +4,41 @@ import pprint
 import urllib
 import datetime
 
-from youtube.models						import Video
+from emergency.models					import Emergency, EmergencySearchTerm
+from youtube.models						import Video, Channel
 
 class Command( BaseCommand ):
-	args = "<channel_id> '<search terms>'"
 	help = "TODO"
 
 	def handle( self, *args, **options ):
-		author      = args[0]
-		search_term = args[1]
+		pp = pprint.PrettyPrinter()
 
-		params   = urllib.urlencode({'author': author, 'alt': 'json', 'q': search_term, 'max-results': 50})
-		feed     = urllib.urlopen( 'http://gdata.youtube.com/feeds/api/videos?%s' % params )
-		response = json.loads( feed.read() )
+		for channel in Channel.objects.all():
+			author = channel.channel_name
 
-		# pp = pprint.PrettyPrinter()
-		# pp.pprint( entries[0] )
-		entries = response['feed']['entry']
+			for search in EmergencySearchTerm.objects.all():
+				params   = urllib.urlencode({'author': channel.channel_name, 'alt': 'json', 'q': search.search_term, 'max-results': 50})
+				feed     = urllib.urlopen( 'http://gdata.youtube.com/feeds/api/videos?%s' % params )
+				response = json.loads( feed.read() )
 
-		for entry in entries:
-			video = Video()
 
-			video.youtube_id  = entry['id']['$t']
-			video.search_term = search_term
-			video.author_name = entry['author'][0]['name']['$t']
-			video.description = entry['content']['$t']
-			video.duration    = entry['media$group']['yt$duration']['seconds']
-			video.link        = entry['link'][0]['href']
-			video.published   = datetime.datetime.strptime(entry['published']['$t'], "%Y-%m-%dT%H:%M:%S.000Z")
-			video.title       = entry['title']['$t']
-			video.views       = entry['yt$statistics']['viewCount']
-			video.favourites  = entry['yt$statistics']['favoriteCount']
+				entries = response['feed'].get('entry', [])
 
-			video.save()
+				for entry in entries:
+					( video, created )       = Video.objects.get_or_create(
+						youtube_id           = entry['id']['$t'],
+						original_search_term = search.search_term,
+						emergency            = search.emergency,
+						channel_name         = entry['author'][0]['name']['$t'],
+						description          = entry['content']['$t'],
+						duration             = entry['media$group']['yt$duration']['seconds'],
+						link                 = entry['link'][0]['href'],
+						published            = datetime.datetime.strptime(entry['published']['$t'], "%Y-%m-%dT%H:%M:%S.000Z"),
+						title                = entry['title']['$t'],
+						views                = entry['yt$statistics']['viewCount'],
+						favourites           = entry['yt$statistics']['favoriteCount'],
+					)
 
-		print "%s: %s: Saved %d" % ( author, search_term,  len( entries ) )
+					video.save()
+
+				print "%s -> '%s': Saved %d" % ( author, search.search_term, len( entries ) )

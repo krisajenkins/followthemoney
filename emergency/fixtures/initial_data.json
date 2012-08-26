@@ -1,0 +1,32 @@
+[
+    {
+        "pk": 2, 
+        "model": "emergency.emergency", 
+        "fields": {
+            "name": "Haiti Earthquake"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "emergency.emergency", 
+        "fields": {
+            "name": "Pakistan Flood"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "pakistan flood", 
+            "emergency": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "emergency.emergencysearchterm", 
+        "fields": {
+            "search_term": "haiti earthquake", 
+            "emergency": 2
+        }
+    }
+]
