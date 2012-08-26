@@ -505,7 +505,7 @@ a:visted {
 /* line 169, ../sass/styles.scss */
 .visualization-container {
   border: 1px solid #cccccc;
-  height: 420px;
+  height: 520px;
   width: 100%;
   margin-bottom: 22px;
 }
@@ -633,4 +633,10 @@ ul.authors {
 /* line 436, ../sass/styles.scss */
 .author a {
   display: block;
+}
+
+#chart_div{
+  width: 700px; 
+  margin-left: 50px;
+  height: 500px;
 }

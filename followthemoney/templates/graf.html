@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+      ["Emergency Name","Total Duration","Funds Committed","","People Affected"],
+      ["East Africa Drought",40956,328906436,0,13300000],
+      ["Haiti Earthquake",178640,4167057145,0,3400000],
+      ["Indian Ocean Tsunami",33524,6249883899,0,2300000],
+      ["Japanese Earthquake & Tsunami",234398,722936734,0,368820],
+      ["Pakistan Floods",58831,2918451998,0,20000000]
+        ]);
+
+        var options = {
+          title: 'Foo',
+          hAxis: {title: 'Total Duration'},
+          vAxis: {title: 'Funds Committed'},
+          bubble: {textStyle: {fontSize: 11}}
+        };
+
+        var chart = new google.visualization.BubbleChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
