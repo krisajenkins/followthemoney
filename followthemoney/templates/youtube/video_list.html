@@ -1,4 +1,6 @@
-"Emergency Name","People Affected", "Total Duration", "Funds Committed"<br/>
-{% for video in video_list %}
-	"{{video.emergency__name}}",{{video.emergency__people_affected}},{{video.total_duration}},{{video.emergency__funds_committed}}<br/>
-{% endfor %}
+[
+	["Emergency Name","Total Duration (minutes)","Funds Committed (m)","","People Affected"],
+	{% for video in video_list %}
+	["{{video.emergency__name}}",{{video.total_duration}},{{video.emergency__funds_committed}},0,{{video.emergency__people_affected}}],
+	{% endfor %}
+]

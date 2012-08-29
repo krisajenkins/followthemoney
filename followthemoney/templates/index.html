@@ -15,25 +15,30 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-      ["Emergency Name","Total Duration","Funds Committed","","People Affected"],
-      ["East Africa Drought",40956,328906436,0,13300000],
-      ["Haiti Earthquake",178640,4167057145,0,3400000],
-      ["Indian Ocean Tsunami",33524,6249883899,0,2300000],
-      ["Japanese Earthquake & Tsunami",234398,722936734,0,368820],
-      ["Pakistan Floods",58831,2918451998,0,20000000]
-        ]);
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable(
+					[
+					["Emergency Name","Total Duration (minutes)","Funds Committed (m)","","People Affected"],
+					["2004 Indian Ocean Tsunami",33617,6249883899,0,2300000],
+					["2010 Haiti Earthquake",178930,4167057145,0,3400000],
+					["2010 Pakistan Floods",58831,2918451998,0,20000000],
+					["2011 East Africa Drought",40956,328906436,0,13300000],
+					["2011 Japanese Earthquake & Tsunami",234463,722936734,0,368820]
+					]
+			);
 
-        var options = {
-          hAxis: {title: 'Total Duration'},
-          vAxis: {title: 'Funds Committed'},
-          bubble: {textStyle: {fontSize: 11}}
-        };
+		var options = {
+			title: 'Media Coverage Vs Aid correlation',
+			hAxis: {title: 'Total Duration'},
+			vAxis: {title: 'Funds Committed', format:'$#,###' },
+			tooltip: {format:'#,###'},
+			colorAxis: {legend: {position:'none'} },
+			bubble: {textStyle: {fontSize: 11}},
+		};
 
         var chart = new google.visualization.BubbleChart(document.getElementById('chart_div'));
         chart.draw(data, options);
